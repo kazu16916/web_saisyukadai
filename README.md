@@ -1,4 +1,4 @@
-# Kadai ページ表示方法
+# ページ表示方法
 
 ## エラー情報 
 ## ”Can't open file for writing”や”Permission denied”と出力が出る可能性があるので 
