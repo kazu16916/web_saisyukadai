@@ -245,6 +245,10 @@ ALTER TABLE `users` ADD COLUMN birthday DATE DEFAULT NULL;
 ```bash
 scp -i {秘密鍵のファイルパス} -r {publicディレクトリのファイルパス} ec2-user@{IPアドレス}:/home/ec2-user/dockertest
 ```
+## エラーが出た場合、EC2インスタンス上で下記コードを打ってください。
+```bash
+sudo chown -R ec2-user:ec2-user public/
+```
 ## 16.権限変更
 ```bash
 chmod 755 public/
