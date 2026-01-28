@@ -172,7 +172,21 @@ RUN install -o www-data -g www-data -d /var/www/upload/image/
 
 COPY ./php.ini ${PHP_INI_DIR}/php.ini
 ```
+## 13.5 php.ini 作成
+```bash
+post_max_size = 5M
+upload_max_filesize = 5M
+
+session.save_handler = redis
+session.save_path = "tcp://redis:6379"
+session.gc_maxlifetime = 86400
+```
 ## SSHを一度ログアウトし、もう一度ログイン
+## docker compose up --buildする
+## ※する際にエラーが起きたら・・・
+```bash
+sudo chown -R ec2-user:ec2-user /var/run/docker.sock
+```
 ## 14. MySQL テーブル作成
 ```bash
 docker compose exec mysql mysql example_db
