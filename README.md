@@ -173,6 +173,9 @@ COPY ./php.ini ${PHP_INI_DIR}/php.ini
 ```
 ## 13.5 php.ini 作成
 ```bash
+vim php.ini
+```
+```bash
 post_max_size = 5M
 upload_max_filesize = 5M
 
