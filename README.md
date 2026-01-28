@@ -131,7 +131,6 @@ vim nginx/conf.d/default.conf
 
 内容：
 ```
-nginx
 server {
     listen       0.0.0.0:80;
     server_name  _;
